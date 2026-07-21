@@ -66,7 +66,6 @@ with record defects:
 
 Run:
 
-```bash
 python verify.py
 
 ## Status
