@@ -1,0 +1,23 @@
+1) Independent finite-range cross-check through 1,000,000
+   PASS: compressed recurrence == independent forward DP for every n <= 1,000,000
+2) First power-of-two shortcut
+   PASS: C(2^m)=m for 1<=m<=53; C(2^54)=53
+3) Canonical operation-count signature at 2^54
+   PASS: unique canonical normalized 53-step signature is (a,b,c)=(8,29,16)
+4) Explicit primitive certificate
+   PASS: 53 primitive operations reach 2^54 exactly (8 *2, 29 *3, 16 +1)
+5) Transition table 45<=m<=60
+   PASS: wrote transition-table.csv
+6) Record defects through m=1600
+   PASS: [(1, 0, 1), (54, 1, 53), (126, 2, 124), (1008, 3, 1005), (1028, 4, 1024)]
+7) Mersenne reduction identity through m=300
+   PASS: delta(m)=max_{k<=m}(k-1-C(2^k-1)) through m=300
+8) Selected fixed-tripling profiles
+   PASS: selected exact profiles reproduced
+9) Local 2/3 swap table
+   PASS: kappa residues = [0,0,-1,+1,0,0] for q mod 6
+10) 3-adic runway at m=54
+   PASS: v3(2^54-1)=4 and no smaller positive even m has v3>=4
+
+All exact verification checks passed.
+Memoized scalar states currently cached: 799128
