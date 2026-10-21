@@ -58,16 +58,21 @@ with record defects:
 
 - `manuscript.pdf` — research preprint
 - `manuscript.tex` — LaTeX source
-- `verify.py` — exact verification code
-- `verification-output.txt` — recorded verification results
+- [reproducibility/verify.py](reproducibility/verify.py) — exact verification code
+- [reproducibility/verification-output.txt](reproducibility/verification-output.txt) — recorded verification results
 - supporting certificates, tables, and computational data
 
 ## Reproducibility
 
-Run:
+From the repository root, run:
 
-python verify.py
+```sh
+python reproducibility/verify.py
+```
+
+The script uses Python's standard library and writes regenerated certificates and
+CSV tables into `reproducibility/`, next to the script.
 
 ## Status
 
-This is an independent research preprint and has not been peer reviewed. This work was discovered and drafted with substantial assistance from large language models. All theorems have been verified by independent Python implementations using exact integer arithmetic (see verify.py).
+This is an independent research preprint and has not been peer reviewed. This work was discovered and drafted with substantial assistance from large language models. All theorems have been verified by independent Python implementations using exact integer arithmetic (see [verify.py](reproducibility/verify.py)).
